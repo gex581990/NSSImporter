@@ -1,4 +1,5 @@
 # NSSImporter
+<img width="512" height="768" alt="NSSImporter Tool Promotional Design" src="https://github.com/user-attachments/assets/0cc2ae15-563f-4b48-8ac1-a431302bd7b1" />
 
 A Windows **Fluent/WinUI 3** desktop app to manage **Nilesoft Shell** `.nss` imports with precision.
 
