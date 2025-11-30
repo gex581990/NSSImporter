@@ -1,0 +1,52 @@
+
+<controls:ContentDialog
+    x:Class="NSSImporter.Views.MenuInsertDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:conv="using:NSSImporter.Converters"
+    PrimaryButtonText="OK"
+    CloseButtonText="Cancel">
+    <controls:ContentDialog.Resources>
+        <conv:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </controls:ContentDialog.Resources>
+
+    <StackPanel Spacing="8" Width="480">
+        <TextBlock Text="Insert options" FontSize="20"/>
+        <RadioButtons x:Name="ModeRadios">
+            <x:String>Standalone</x:String>
+            <x:String>Create new menu</x:String>
+            <x:String>Insert into existing menu</x:String>
+        </RadioButtons>
+
+        <StackPanel Orientation="Horizontal" Spacing="8">
+            <TextBlock Text="Index or 'end':" VerticalAlignment="Center"/>
+            <TextBox x:Name="IndexBox" Width="80" PlaceholderText="end"/>
+        </StackPanel>
+
+        <StackPanel x:Name="CreateMenuPanel" Visibility="Collapsed" Spacing="8">
+            <TextBlock Text="New menu title:"/>
+            <TextBox x:Name="TitleBox"/>
+            <TextBlock Text="Mode (optional):"/>
+            <TextBox x:Name="ModeBox"/>
+            <TextBlock Text="Types (optional):"/>
+            <TextBox x:Name="TypesBox"/>
+        </StackPanel>
+
+        <StackPanel x:Name="ExistingMenuPanel" Visibility="Collapsed" Spacing="8">
+            <TextBlock Text="Existing menu title:"/>
+            <ComboBox x:Name="MenuCombo"/>
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <TextBlock Text="Index or 'end':" VerticalAlignment="Center"/>
+                <TextBox x:Name="MenuIndexBox" Width="80" PlaceholderText="end"/>
+            </StackPanel>
+        </StackPanel>
+
+        <Border Background="{StaticResource CardBackground}" CornerRadius="6" Padding="8">
+            <StackPanel>
+                <TextBlock Text="Preview:"/>
+                <ListView x:Name="PreviewLines"/>
+            </StackPanel>
+        </Border>
+    </StackPanel>
+</controls:ContentDialog>

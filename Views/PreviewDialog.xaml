@@ -1,0 +1,13 @@
+
+<controls:ContentDialog
+    x:Class="NSSImporter.Views.PreviewDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    Title="Preview"
+    PrimaryButtonText="OK"
+    CloseButtonText="Cancel">
+    <Grid Width="560" Height="420">
+        <ListView x:Name="List"/>
+    </Grid>
+</controls:ContentDialog>
