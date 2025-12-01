@@ -1,11 +1,13 @@
-# NSSImporter
 <div align="center">
   <img width="256" height="480" alt="NSSImporter Tool Promotional Design" src="https://github.com/user-attachments/assets/0cc2ae15-563f-4b48-8ac1-a431302bd7b1" />
   </div>
-<div align="center">
+  
+# NSSImporter
+
 A Windows **Fluent/WinUI 3** desktop app to manage **Nilesoft Shell** `.nss` imports with precision.
 
 It mirrors the full-featured PowerShell workflow—now in a GUI—with:
+
 
 - Drag-and-drop or manual file selection for the source `.nss`
 - Auto-detect (or browse to) **Nilesoft Shell** install path (portable supported)
@@ -39,7 +41,7 @@ It mirrors the full-featured PowerShell workflow—now in a GUI—with:
   ```
   "<ShellRoot>\shell.exe" -restart
   ```
-</div>
+
 ---
 
 ## Requirements
